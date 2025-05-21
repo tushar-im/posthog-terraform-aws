@@ -199,16 +199,18 @@ This script will create the following resources:
 
 ## Infrastructure Maintenance
 
-To update or modify your infrastructure:
+1. To destroy the infrastructure except the S3 backend, use :
+   ```
+   terraform destroy -var-file=terraform.tfvars -target=module.ec2 -target=module.acm -target=module.security -target=module.route53
+   ```
+2. To destroy all, use :
 
-1. Make changes to the Terraform configuration files
-2. Run `terraform plan` to preview changes
-3. Apply changes with `terraform apply`
-
-To destroy the infrastructure when no longer needed:
-
-```
-terraform destroy -var-file=terraform.tfvars
-```
-
+   ```
+   terraform destroy
+   ```
 **Note**: This will permanently delete all resources. Make sure to back up any important data before destroying the infrastructure.
+---
+   
+
+
+
