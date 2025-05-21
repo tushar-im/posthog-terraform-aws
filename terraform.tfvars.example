@@ -1,0 +1,26 @@
+# Provider Configuration
+profile     = ""
+access-key  = ""
+secret-key  = ""
+region      = "us-west-2"
+environment = "production"
+
+# Availability Zones
+availability_zones = ["us-west-2a", "us-west-2b"]
+
+# VPC Configuration
+vpc_id            = "vpc-00000000000000000"
+
+# Security Configuration
+allowed_cidr_blocks = ["0.0.0.0/0"]
+ssh_allowed_cidr    = ["0.0.0.0/0"]
+
+# EC2 Variables
+ami_id        = "ami-075686beab831bb7f" # Ubuntu Server 24.04 LTS (HVM), SSD Volume Type
+instance_type = "t3.xlarge"
+volume_size   = 30
+
+# Domain and Route53 Configuration
+domain_name        = "houseworksinc.co"
+route53_zone_id    = ""
+deploy_private_key = "-----BEGIN OPENSSH PRIVATE KEY-----\n==\n-----END OPENSSH PRIVATE KEY-----ß"
