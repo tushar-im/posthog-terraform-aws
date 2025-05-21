@@ -1,4 +1,25 @@
-# posthog-terraform-aws
+# PostHog Self-Hosted on AWS
+
+## What is PostHog?
+
+PostHog is an open-source product analytics platform that helps you understand user behavior without sending your data to third parties.
+
+## What the solution offers:
+
+* Fully automated deployment - PostHog installs itself during EC2 provisioning
+* Production-ready infrastructure - Properly sized EC2 instance, secure networking, and SSL certificates
+* Secure by default - Encrypted storage, private networking, and proper access controls
+* DNS and SSL included - Automatic domain configuration and SSL certificate provisioning
+
+## Technical highlights:
+
+* Terraform-managed infrastructure as code
+* Remote state management with S3
+* Automatic SSL certificate provisioning with ACM
+* Route53 DNS configuration
+* EC2 instance with user data script for PostHog installation
+
+
 
 ## Instructions
 
